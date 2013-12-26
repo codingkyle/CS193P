@@ -5,36 +5,48 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>F97A81B5-2759-435F-9214-A68A73781547</string>
+	<string>6356DE29-38CD-4E5A-B639-A6E4E777ABF2</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Matchismo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>3FAA5E1B-36BB-440F-974A-D1A99C9BE82A</key>
-		<string>https://github.com/codingkyle/CS163P.git</string>
+		<key>8DA7A7F8-73C0-4533-AC77-44CECB6D2B0A</key>
+		<string>https://github.com/codingkyle/-CS193P-Matchismo.git</string>
+		<key>95A21875-7298-4633-BD90-396298656D43</key>
+		<string>https://github.com/codingkyle/CS193P.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Matchismo/Matchismo.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>3FAA5E1B-36BB-440F-974A-D1A99C9BE82A</key>
+		<key>8DA7A7F8-73C0-4533-AC77-44CECB6D2B0A</key>
+		<string>../..</string>
+		<key>95A21875-7298-4633-BD90-396298656D43</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/codingkyle/CS163P.git</string>
+	<string>https://github.com/codingkyle/-CS193P-Matchismo.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>3FAA5E1B-36BB-440F-974A-D1A99C9BE82A</string>
+	<string>95A21875-7298-4633-BD90-396298656D43</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>3FAA5E1B-36BB-440F-974A-D1A99C9BE82A</string>
+			<string>95A21875-7298-4633-BD90-396298656D43</string>
 			<key>IDESourceControlWCCName</key>
-			<string>CS163P</string>
+			<string>CS193P</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8DA7A7F8-73C0-4533-AC77-44CECB6D2B0A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Matchismo</string>
 		</dict>
 	</array>
 </dict>

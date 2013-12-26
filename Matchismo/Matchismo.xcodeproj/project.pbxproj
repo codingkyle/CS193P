@@ -25,6 +25,7 @@
 		53212DE61865ED0A00D00152 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 53212DE01865ED0A00D00152 /* Deck.m */; };
 		53212DE71865ED0A00D00152 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 53212DE21865ED0A00D00152 /* PlayingCard.m */; };
 		53212DE81865ED0A00D00152 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 53212DE41865ED0A00D00152 /* PlayingCardDeck.m */; };
+		533370A31865FFC800ADDC5D /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 533370A21865FFC800ADDC5D /* CardMatchingGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		53212DE21865ED0A00D00152 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
 		53212DE31865ED0A00D00152 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
 		53212DE41865ED0A00D00152 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
+		533370A11865FFC800ADDC5D /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardMatchingGame.h; sourceTree = "<group>"; };
+		533370A21865FFC800ADDC5D /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardMatchingGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +179,8 @@
 				53212DE21865ED0A00D00152 /* PlayingCard.m */,
 				53212DE31865ED0A00D00152 /* PlayingCardDeck.h */,
 				53212DE41865ED0A00D00152 /* PlayingCardDeck.m */,
+				533370A11865FFC800ADDC5D /* CardMatchingGame.h */,
+				533370A21865FFC800ADDC5D /* CardMatchingGame.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -228,6 +233,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Kyle Adams";
 				TargetAttributes = {
+					53212DA31865E42800D00152 = {
+						DevelopmentTeam = ZKWNKALY9F;
+					};
 					53212DC41865E42800D00152 = {
 						TestTargetID = 53212DA31865E42800D00152;
 					};
@@ -282,6 +290,7 @@
 				53212DE61865ED0A00D00152 /* Deck.m in Sources */,
 				53212DB81865E42800D00152 /* CardGameAppDelegate.m in Sources */,
 				53212DBE1865E42800D00152 /* CardGameViewController.m in Sources */,
+				533370A31865FFC800ADDC5D /* CardMatchingGame.m in Sources */,
 				53212DE81865ED0A00D00152 /* PlayingCardDeck.m in Sources */,
 				53212DB41865E42800D00152 /* main.m in Sources */,
 				53212DE51865ED0A00D00152 /* Card.m in Sources */,
@@ -411,10 +420,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Matchismo/Matchismo-Prefix.pch";
 				INFOPLIST_FILE = "Matchismo/Matchismo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -424,10 +436,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Matchismo/Matchismo-Prefix.pch";
 				INFOPLIST_FILE = "Matchismo/Matchismo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -493,6 +508,7 @@
 				53212DD81865E42800D00152 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		53212DD91865E42800D00152 /* Build configuration list for PBXNativeTarget "MatchismoTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +517,7 @@
 				53212DDB1865E42800D00152 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

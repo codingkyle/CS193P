@@ -28,7 +28,6 @@
 - (CardMatchingGame *)game {
     if (!_game) {
         _game = [[CardMatchingGame alloc] initWithCardCount:[self.cardButtons count] usingDeck:[self createDeck]];
-        [self matchModeSelector:self.matchModeControl];
     }
     return _game;
 }
@@ -40,8 +39,8 @@
     return _gameResults;
 }
 
-- (Deck *)createDeck {
-    return [[PlayingCardDeck alloc] init];
+- (Deck *)createDeck { //abstract
+    return nil;
 }
 
 - (IBAction)gameResultSlider:(UISlider *)resultsSlider {
@@ -49,7 +48,7 @@
 }
 
 - (IBAction)touchCardButton:(UIButton *)sender {
-    int chosenButtonIndex = [self.cardButtons indexOfObject:sender];
+    NSUInteger chosenButtonIndex = [self.cardButtons indexOfObject:sender];
     [self.game chooseCardAtIndex:chosenButtonIndex];
     [self.matchModeControl setEnabled:NO];
     [self updateUI];
@@ -68,12 +67,12 @@
 
 - (void)updateUI {
     for (UIButton *cardButton in self.cardButtons) {
-        int cardButtonIndex = [self.cardButtons indexOfObject:cardButton];
+        NSUInteger cardButtonIndex = [self.cardButtons indexOfObject:cardButton];
         Card *card = [self.game cardAtIndex:cardButtonIndex];
         [cardButton setTitle:[self titleForCard:card] forState:UIControlStateNormal];
         [cardButton setBackgroundImage:[self backgroundImageForCard:card] forState:UIControlStateNormal];
         cardButton.enabled = !card.isMatched;
-        self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
+        self.scoreLabel.text = [NSString stringWithFormat:@"Score: %ld", (long)self.game.score];
     }
     
     self.progressLabel.text = self.game.resultString;
@@ -88,13 +87,13 @@
 
 - (void)setSliderRange
 {
-    int maxValue = [self.gameResults count] - 1;
+    NSUInteger maxValue = [self.gameResults count] - 1;
     self.resultsSlider.maximumValue = maxValue;
     [self.resultsSlider addTarget:self action:@selector(setResults) forControlEvents:UIControlEventValueChanged];
 }
 
 - (void)setResults {
-    int sliderValue = lroundf(self.resultsSlider.value);
+    NSUInteger sliderValue = lroundf(self.resultsSlider.value);
     [self.resultsSlider setValue:sliderValue animated:YES];
     if ([self.gameResults count]) {
         self.progressLabel.alpha = self.resultsSlider.value = [self.gameResults count] + 1 ? 0.5 : 1;
